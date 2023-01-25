@@ -6,9 +6,9 @@ def restart():
 def restart_with_time():
   return os.system("shutdown /r /t 20")
 def log_out():
-  return os.system("shutdown /r /t 1")
+  return os.system("shutdown -l")   #-l = log out command
 def shutdown():
-  return os.system("shutdown -l")
+  return os.system("shutdown /s /t 1")    #/s = shut down
 
 
 
