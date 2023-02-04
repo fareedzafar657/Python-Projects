@@ -4,9 +4,9 @@ import time
 
 
 def update_clock():
-    current_time = time.strftime("%I:%M:%S:%p")  # %I for 12 hours format
+    current_time = time.strftime("%I:%M:%S %p")  # %I for 12 hours format
     clock.configure(text=current_time)
-    clock.after(100, update_clock)
+    clock.after(1000, update_clock)
 
 
 window = Tk()
